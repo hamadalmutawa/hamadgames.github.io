@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games Hub</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; background: #222; color: white; }
+        h1 { margin-top: 20px; }
+        #gameContainer { width: 90%; height: 500px; margin: 10px auto; border: 2px solid white; }
+        button { margin: 5px; padding: 10px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px; }
+        .game-btn { background: #4CAF50; color: white; }
+        .game-btn:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Unblocked Games Hub</h1>
+    <p>Select a game and start playing!</p>
+    
+    <div>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/slope/')">Slope Run</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/snow-rider-3d/')">Snow Rider 3D</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/drift-hunters/')">Drift Race</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/retro-bowl/')">Retro Bowl</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/moto-x3m/')">Moto X3M</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/1v1lol/')">1v1.LOL</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/stickman-hook/')">Stickman Hook</button>
+        <button class="game-btn" onclick="loadGame('https://ubg100.github.io/tunnel-rush/')">Tunnel Rush</button>
+    </div>
+
+    <iframe id="gameContainer"></iframe>
+
+    <script>
+        function loadGame(url) {
+            document.getElementById("gameContainer").src = url;
+            document.getElementById("gameContainer").style.display = "block";
+        }
+    </script>
+</body>
+</html>
